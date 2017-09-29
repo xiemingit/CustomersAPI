@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+ 
 namespace CustomersApi.Repository
 {
 	public class CustomerRepository : ICustomerRepository 
@@ -16,6 +16,9 @@ namespace CustomersApi.Repository
 			customers.Add(new Customer() { Name = "Awesome customer", Address = "France", Telephone = "34546456" });
             //Add new user
             customers.Add(new Customer() { Name = "Min Xie", Address = "USA", Telephone = "88888888" });
+            customers.Add(new Customer() { Name = "Test User", Address = "USA", Telephone = "88888888" });
+
+            //add another user
             customers.Add(new Customer() { Name = "Test User", Address = "USA", Telephone = "88888888" });
             return customers;
 		}
